@@ -1,0 +1,33 @@
+llm_configurations:
+  language:
+    provider: "deepseek"
+    model: "deepseek-chat"
+    api_key: "sk-xxxxx"  # 从环境变量获取
+    model_name: "deepseek-chat"
+    base_url: "https://api.deepseek.com/v1"
+    timeout: 30
+    temperature: 0.2
+    
+  reasoning:
+    provider: "deepseek"
+    model_name: "deepseek-reasoner"
+    api_key: "sk-xxxxx"
+    base_url: "https://api.deepseek.com/v1"
+    timeout: 90
+    temperature: 0.2
+  
+  
+    
+  multimodal:
+    provider: "google"
+    model: "gemini-pro"
+    api_key: "${GOOGLE_API_KEY}"
+    safety_settings:
+      - category: "HARM_CATEGORY_DANGEROUS"
+        threshold: "BLOCK_NONE"
+  
+  deepseek:  # 新增配置段
+    # api_key: "${DEEPSEEK_API_KEY}"  # 确保环境变量已设置
+    api_key: "sk-xxxxx"
+    model_name: "deepseek-reasoner"
+    base_url: "https://api.deepseek.com/v1"
