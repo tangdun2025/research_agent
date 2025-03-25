@@ -42,3 +42,6 @@ pip install -r requirements.txt
 # 设置环境变量
 export DASHSCOPE_API_KEY="your_dashscope_api_key"  # 通义千问API密钥
 export TAVILY_API_KEY="your_tavily_api_key"  # Tavily搜索API密钥
+```
+### 下一步
+![这是图片](行业研究助手.png "research_agent plan")
